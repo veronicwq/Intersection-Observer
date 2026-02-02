@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+img.lazy {
+  height: 200px;            
+  background-color: #f0f0f0; 
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+
+img.lazy.loaded {
+  opacity: 1;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лінійне завантаження зображень</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Lazy Loading Зображень</h1>
+  <p>Прокрутіть сторінку, щоб завантажити зображення лише тоді, коли вони стають видимими.</p>
+
+  <div class="image-container">
+    <img data-src="https://pixabay.com/images/download/x-8329971_1920.jpg" 
+    alt="Зображення 1"
+     class="lazy">
+
+    <img data-src="https://pixabay.com/images/download/x-9635138_1920.jpg"
+     alt="Зображення 2" 
+     class="lazy">
+
+    <img data-src="https://pixabay.com/images/download/x-9568531_1920.jpg" 
+    alt="Зображення 3" 
+    class="lazy">
+
+    <img data-src="https://pixabay.com/images/download/x-9948115_1920.jpg" 
+    alt="Зображення 4" 
+    class="lazy">
+
+    <img data-src="https://pixabay.com/images/download/x-9163892_1920.jpg" 
+    alt="Зображення 5" 
+    class="lazy">
+  </div>
+
+  <button id="loadAll">Завантажити всі зображення зараз</button>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
